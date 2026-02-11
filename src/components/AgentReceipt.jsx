@@ -219,7 +219,7 @@ const AgentReceipt = () => {
                   {/* Right Side - Company Registration Details */}
                   <div className="text-left text-sm">
                     <p className="mb-1">NMLS ID: 2327896</p>
-                    <p className="mb-1">FinCEN Registered MSB</p>
+                    <p className="mb-1">FinCEN ID: 31000249115048</p>
                     <p className="mb-1">NBE Approved</p>
                   </div>
                 </div>
@@ -241,9 +241,9 @@ const AgentReceipt = () => {
                 <div className="mb-3 text-sm space-y-1">
                   {/* DATE Row */}
                   <div className="grid grid-cols-3">
-                    <div className="col-start-3 flex justify-between">
+                    <div className="col-start-3 flex justify-between whitespace-nowrap">
                       <span className="font-semibold text-gray-600">Date:</span>
-                      <span className="text-gray-900">
+                      <span className="text-gray-900 ml-2">
                         {receiptData.dateTime}
                       </span>
                     </div>
@@ -479,10 +479,10 @@ const AgentReceipt = () => {
                     </div>
                     <div className="flex items-center py-1.5 border-b border-gray-300">
                       <span className="text-gray-600 text-xs w-44">
-                        Payment Mode
+                      Destination Country
                       </span>
                       <span className="font-semibold text-gray-900 text-sm">
-                        {receiptData.paymentMode}
+                        Ethiopia
                       </span>
                     </div>
                     <div className="flex items-center py-1.5 border-b border-gray-300">
@@ -527,18 +527,24 @@ const AgentReceipt = () => {
 
                 {/* Footer Notes */}
                 <div className="pt-3 pb-3 text-xs text-gray-600">
-                  <p className="text-center mb-3">
-                    Thank you for using{" "}
-                    <span className="font-bold text-gray-900">FastPay</span>
+                  <p className="text-center leading-relaxed px-4">
+                    If you have a complaint, first contact the licensee at{" "}
+                    <span className="font-semibold">+1 301-200-7090</span> /{" "}
+                    <span className="font-semibold">+251 99-549-9844</span> /{" "}
+                    <span className="font-semibold">support@fastpayet.com</span>.
+                    {" "}If you still have an unresolved complaint, you may contact
+                    the Maryland Office of Financial Regulation at 1100 N. Eutaw
+                    Street, Suite 611, Baltimore, Maryland 21201, or visit{" "}
+                    <a
+                      href="https://www.labor.maryland.gov/finance"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-[#0284C7] underline"
+                    >
+                      www.labor.maryland.gov/finance
+                    </a>
+                    .
                   </p>
-                  <div className="flex flex-wrap items-center justify-center gap-3 text-gray-700">
-                    <span className="font-semibold">+1 (301) 200-7090</span>
-                    <span className="font-semibold">+251 99-549-9844</span>
-                    <span className="font-semibold">support@fastpayet.com</span>
-                    <span className="font-semibold">
-                      NMLS ID: 2327896 | FinCEN: Registered MSB
-                    </span>
-                  </div>
                 </div>
 
                 {/* Download PDF Button */}

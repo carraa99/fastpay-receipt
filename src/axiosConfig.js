@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create a new Axios instance
 const axiosInstance = axios.create({
-  baseURL: "https://us-central1-fpserverapp.cloudfunctions.net/api", // Your API base URL
+  baseURL: import.meta.env.VITE_API_BASE_URL,
 });
 
 
