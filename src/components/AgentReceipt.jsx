@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import "./AgentReceipt.css";
-import fastpayWatermark from "../assets/fastpay2.png";
+import fastpayWatermark from "/static/images/fp/fastpay2.png";
 import axiosInstance from "../axiosConfig.js";
 
 const AgentReceipt = () => {
@@ -211,13 +211,21 @@ const AgentReceipt = () => {
                         className="h-12 object-contain"
                       />
                     </div>
-                    <div className="text-sm opacity-90">
+                    <div className="text-xs opacity-90">
                       <p>FastPay LLC</p>
                       <p>Money Transfer Service</p>
                     </div>
                   </div>
+                  {/* Center - License Info */}
+                  <div className="text-left text-xs opacity-90 max-w-[280px] leading-relaxed">
+                    <p>
+                      FastPay LLC is licensed as a Money Transmitter by the
+                      Maryland Office of Financial Regulation. License status
+                      may be verified through NMLS Consumer Access.
+                    </p>
+                  </div>
                   {/* Right Side - Company Registration Details */}
-                  <div className="text-left text-sm">
+                  <div className="text-left text-xs">
                     <p className="mb-1">NMLS ID: 2327896</p>
                     <p className="mb-1">FinCEN ID: 31000249115048</p>
                     <p className="mb-1">NBE Approved</p>
