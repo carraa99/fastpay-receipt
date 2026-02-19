@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import html2canvas from "html2canvas";
+import html2canvas from "html2canvas-pro";
 import jsPDF from "jspdf";
 import "./AgentReceipt.css";
 import fastpayWatermark from "/static/images/fp/fastpay2.png";
@@ -102,6 +102,7 @@ const AgentReceipt = () => {
       const canvas = await html2canvas(element, {
         scale: 2,
         useCORS: true,
+        allowTaint: true,
         logging: false,
         backgroundColor: "#ffffff",
       });
@@ -121,8 +122,7 @@ const AgentReceipt = () => {
       pdf.save(`FastPay_Receipt_${receiptData.orderId || fastPayOrderId}.pdf`);
     } catch (error) {
       console.error("Error generating PDF:", error);
-      // Fallback to browser print dialog
-      window.print();
+      alert("Failed to generate PDF. Please try again.");
     } finally {
       if (scaleWrapper) {
         scaleWrapper.classList.remove("force-scale-1");
