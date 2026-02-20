@@ -141,7 +141,7 @@ const AgentReceipt = () => {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#0284C7] mx-auto"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#253B80] mx-auto"></div>
           <p className="mt-4 text-gray-600">Loading receipt...</p>
         </div>
       </div>
@@ -155,7 +155,7 @@ const AgentReceipt = () => {
           <p className="text-gray-600">Receipt not found</p>
           <button
             onClick={() => navigate("/agent-transactions")}
-            className="mt-4 px-6 py-2 bg-[#0284C7] text-white rounded-lg hover:bg-[#0369a1]"
+            className="mt-4 px-6 py-2 bg-[#253B80] text-white rounded-lg hover:bg-[#1c2d63]"
           >
             Back to Transactions
           </button>
@@ -165,7 +165,7 @@ const AgentReceipt = () => {
   }
 
   const sectionHeaderClass =
-    "bg-[#0284C7] text-white text-sm font-bold h-11 flex items-center px-4";
+    "bg-[#253B80] text-white text-sm font-bold h-11 flex items-center px-4";
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -200,7 +200,7 @@ const AgentReceipt = () => {
 
             <div className="relative z-[10]">
               {/* Header Section */}
-              <div className="bg-gradient-to-r from-[#0284C7] to-[#0369a1] px-6 py-3 text-white">
+              <div className="bg-[#253B80] px-6 py-3 text-white">
                 <div className="flex justify-between items-start">
                   {/* Left Side - Logo */}
                   <div>
@@ -241,7 +241,7 @@ const AgentReceipt = () => {
               </div>
 
               {/* Blue Separator Line Below Header */}
-              <div className="h-0.5 bg-[#0284C7]"></div>
+              <div className="h-0.5 bg-[#253B80]"></div>
 
               {/* Transaction Details */}
               <div className="bg-gray-50/80 px-6 py-1.5">
@@ -369,7 +369,7 @@ const AgentReceipt = () => {
                         <p className="text-gray-600 text-xs mb-1">
                           Transaction Status
                         </p>
-                        <p className="font-semibold text-[#0284C7]">
+                        <p className="font-semibold text-[#253B80]">
                           {receiptData.transactionStatus}
                         </p>
                       </div>
@@ -547,7 +547,7 @@ const AgentReceipt = () => {
                       href="https://www.labor.maryland.gov/finance"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-semibold text-[#0284C7] underline"
+                      className="font-semibold text-[#253B80] underline"
                     >
                       www.labor.maryland.gov/finance
                     </a>
@@ -562,7 +562,7 @@ const AgentReceipt = () => {
                 >
                   <button
                     onClick={handleDownloadPDF}
-                    className="px-8 py-3 bg-[#0284C7] text-white rounded-lg font-bold hover:bg-[#0369a1] transition-colors"
+                    className="px-8 py-3 bg-[#253B80] text-white rounded-lg font-bold hover:bg-[#1c2d63] transition-colors"
                   >
                     Download PDF
                   </button>
