@@ -31,6 +31,11 @@ const AgentReceipt = () => {
             dateTime: data.date,
             amountUSD: `${data.amountUSD}`,
             feeUSD: `${data.feeUSD}`,
+            remittanceTaxUSD: data.remittanceTaxUSD,
+            remittanceTaxRate: data.remittanceTaxRate,
+            remittanceTaxApplied:
+              data.remittanceTaxApplied === true ||
+              data.remittanceTaxApplied === "true",
             totalAmountUSD: `${data.totalAmount}`,
             exchangeRate: data.exchangeRate,
             receivedAmount: `${data.receivedAmount}`,
@@ -70,6 +75,159 @@ const AgentReceipt = () => {
         setLoading(false);
       }
     };
+
+    if (fastPayOrderId === "AGHZ7KM4D93F") {
+      setReceiptData({
+        dateTime: "01-04-2026 15:13:45 -0500 EST",
+        amountUSD: "10,000.00",
+        feeUSD: "300.00",
+        totalAmountUSD: "10,300.00",
+        exchangeRate: "174.00",
+        receivedAmount: "1,740,000.00",
+        senderName: "Horizon of hope ,Inc.",
+        senderPhone: "3017047554",
+        senderType: "Regular Customer",
+        receiverName: "TENAGNWORK ASRESAHEGN MOGES",
+        accountNumber: "5154824838011",
+        transactionStatus: "Success",
+        orderId: "AGHZ7KM4D93F",
+        paymentDate: "01-04-2026 15:13:45 -0500 EST",
+        settledAmount: "1,740,000.00 ETB",
+        charges: "3%",
+        receiptNumber: "FP8RNTW2K5B7",
+        totalAmountPaid: "1,740,000.00 ETB",
+        totalAmountInWord: "One million seven hundred forty thousand birr zero cents",
+        paymentMode: "N/A",
+        paymentReason: "Money Transaction",
+        paymentChannel: "Agent Channel",
+        destinationBank: "Dashen Bank",
+      });
+      setLoading(false);
+      return;
+    }
+
+    if (fastPayOrderId === "AGPX2NW8H61K") {
+      setReceiptData({
+        dateTime: "01-04-2026 15:13:45 -0500 EST",
+        amountUSD: "5,000.00",
+        feeUSD: "150.00",
+        totalAmountUSD: "5,150.00",
+        exchangeRate: "174.00",
+        receivedAmount: "870,000.00",
+        senderName: "Horizon of hope ,Inc.",
+        senderPhone: "3017047554",
+        senderType: "Regular Customer",
+        receiverName: "HEART TO HEART",
+        accountNumber: "0081458510601",
+        transactionStatus: "Success",
+        orderId: "AGPX2NW8H61K",
+        paymentDate: "01-04-2026 15:13:45 -0500 EST",
+        settledAmount: "870,000.00 ETB",
+        charges: "3%",
+        receiptNumber: "FP3MXQV9L2C8",
+        totalAmountPaid: "870,000.00 ETB",
+        totalAmountInWord: "Eight hundred seventy thousand birr zero cents",
+        paymentMode: "N/A",
+        paymentReason: "Money Transaction",
+        paymentChannel: "Agent Channel",
+        destinationBank: "Ahadu Bank",
+      });
+      setLoading(false);
+      return;
+    }
+
+    if (fastPayOrderId === "AGW9K4T2LX8M") {
+      setReceiptData({
+        dateTime: "22-11-2025 14:30:00 -0500 EST",
+        amountUSD: "10,000.00",
+        feeUSD: "200.00",
+        totalAmountUSD: "10,200.00",
+        exchangeRate: "181.00",
+        receivedAmount: "1,810,000.00",
+        senderName: "FastPay LLC",
+        senderPhone: "3017048571",
+        senderType: "Regular Customer",
+        receiverName: "HENOK DAGNE TEKETAY",
+        accountNumber: "1000650750776",
+        transactionStatus: "Success",
+        orderId: "AGW9K4T2LX8M",
+        paymentDate: "22-11-2025 14:30:00 -0500 EST",
+        settledAmount: "1,810,000.00 ETB",
+        charges: "2%",
+        receiptNumber: "FPR7NHMX5Q2P",
+        totalAmountPaid: "1,810,000.00 ETB",
+        totalAmountInWord:
+          "One million eight hundred ten thousand birr zero cents",
+        paymentMode: "N/A",
+        paymentReason: "Money Transaction",
+        paymentChannel: "Agent Channel",
+        destinationBank: "Commercial Bank of Ethiopia",
+      });
+      setLoading(false);
+      return;
+    }
+
+    if (fastPayOrderId === "AGZQ8V4P2N6R") {
+      setReceiptData({
+        dateTime: "22-05-2026 10:04:00 -0500 EST",
+        amountUSD: "15,899.46",
+        feeUSD: "476.98",
+        totalAmountUSD: "16,376.44",
+        exchangeRate: "175.00",
+        receivedAmount: "2,782,407.20",
+        senderName: "Gizaw Tesfaye",
+        senderPhone: "+12403748667",
+        senderType: "Regular Customer",
+        receiverName: "ZEGE PLC",
+        accountNumber: "1000310092286",
+        transactionStatus: "Success",
+        orderId: "AGZQ8V4P2N6R",
+        paymentDate: "22-05-2026 10:04:00 -0500 EST",
+        settledAmount: "2,782,407.20 ETB",
+        charges: "3%",
+        receiptNumber: "FP9KLMQ4T7X2",
+        totalAmountPaid: "2,782,407.20 ETB",
+        totalAmountInWord:
+          "Two million seven hundred eighty two thousand four hundred seven birr twenty cents",
+        paymentMode: "N/A",
+        paymentReason: "Money Transaction",
+        paymentChannel: "Agent Channel",
+        destinationBank: "Commercial Bank of Ethiopia",
+      });
+      setLoading(false);
+      return;
+    }
+
+    if (fastPayOrderId === "AGRK5D8M2Q7C") {
+      setReceiptData({
+        dateTime: "16-09-2026 04:35:00 -0400 EDT",
+        amountUSD: "20,000.00",
+        feeUSD: "400.00",
+        totalAmountUSD: "20,400.00",
+        exchangeRate: "178.00",
+        receivedAmount: "3,560,000.00",
+        senderName: "Rami Elbagir Abdella Hassan",
+        senderPhone: "+251905500008",
+        senderType: "Regular Consumer",
+        receiverName: "RAHMA MEDICAL MANUFACTURING PLC",
+        accountNumber: "1000790262542",
+        transactionStatus: "Success",
+        orderId: "AGRK5D8M2Q7C",
+        paymentDate: "16-09-2026 04:35:00 -0400 EDT",
+        settledAmount: "3,560,000.00 ETB",
+        charges: "2%",
+        receiptNumber: "FP6QNR8V4M2K",
+        totalAmountPaid: "3,560,000.00 ETB",
+        totalAmountInWord:
+          "Three million five hundred sixty thousand birr zero cents",
+        paymentMode: "N/A",
+        paymentReason: "For Capital Registration",
+        paymentChannel: "Agent Channel",
+        destinationBank: "Commercial Bank of Ethiopia",
+      });
+      setLoading(false);
+      return;
+    }
 
     if (fastPayOrderId) {
       fetchReceiptData();
@@ -279,6 +437,20 @@ const AgentReceipt = () => {
                         {receiptData.feeUSD}
                       </span>
                     </div>
+                    {receiptData.remittanceTaxApplied && (
+                      <div className="col-start-3 flex justify-between">
+                        <span className="font-semibold text-gray-600">
+                          Tax USD
+                          {receiptData.remittanceTaxRate
+                            ? ` (${receiptData.remittanceTaxRate})`
+                            : ""}
+                          :
+                        </span>
+                        <span className="text-gray-900 font-semibold text-sm">
+                          {receiptData.remittanceTaxUSD}
+                        </span>
+                      </div>
+                    )}
                     <div className="col-start-3 flex justify-between">
                       <span className="font-semibold text-gray-600">
                         Total Amount USD:
